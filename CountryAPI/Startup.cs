@@ -1,20 +1,18 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace FriendAPI
+namespace CountryAPI
 {
     public class Startup
     {
@@ -29,9 +27,9 @@ namespace FriendAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<Repository.Mapping.Context.ProjectContext>(opt =>
-           {
-               opt.UseSqlServer(Configuration.GetConnectionString("ATConnection"));
-           });
+            {
+                opt.UseSqlServer(Configuration.GetConnectionString("ATConnection"));
+            });
             services.AddControllers();
         }
 

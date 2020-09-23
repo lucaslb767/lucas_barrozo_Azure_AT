@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Repository.Mapping.Context
 {
-    class ProjectContext : DbContext
+    public class ProjectContext : DbContext
     {
         public DbSet<Friend> Friends { get; set; }
         public DbSet<Country> Countries { get; set; }

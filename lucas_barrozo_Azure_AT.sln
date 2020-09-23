@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendAPI", "FriendAPI\Frie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{AFB9B98B-0EFF-40FB-B306-131605915FBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryAPI", "CountryAPI\CountryAPI.csproj", "{F92C67B5-8EF5-4DE1-AB64-1472E2050414}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AFB9B98B-0EFF-40FB-B306-131605915FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFB9B98B-0EFF-40FB-B306-131605915FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFB9B98B-0EFF-40FB-B306-131605915FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92C67B5-8EF5-4DE1-AB64-1472E2050414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92C67B5-8EF5-4DE1-AB64-1472E2050414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92C67B5-8EF5-4DE1-AB64-1472E2050414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92C67B5-8EF5-4DE1-AB64-1472E2050414}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
