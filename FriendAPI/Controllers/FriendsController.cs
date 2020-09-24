@@ -57,12 +57,11 @@ namespace FriendAPI.Controllers
             var friendMod = _context.Friends.Find(id);
             friendMod.Name = friend.Name;
             friendMod.Surname = friend.Surname;
-            friendMod.Photo = friend.Photo;
             friendMod.Email = friend.Email;
             friendMod.Telephone = friend.Telephone;
             friendMod.Bday = friend.Bday;
-            friendMod.Country = friendMod.Country;
-            friendMod.State = friendMod.State;
+            friendMod.Country = friend.Country;
+            friendMod.State = friend.State;
 
             _context.Friends.Update(friendMod);
 

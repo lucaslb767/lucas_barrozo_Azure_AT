@@ -91,7 +91,7 @@ namespace WebAzure.Controllers
                 var client = new RestClient();
                 var request = new RestRequest("http://localhost:5003/api/friends/" + id, DataFormat.Json);
                 request.AddJsonBody(friendN);
-
+                var response = client.Put<Friend>(request);
                 return Redirect("/friend/index");
             }
             catch

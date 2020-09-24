@@ -49,8 +49,9 @@ namespace WebAzure.Controllers
             {
                 var client = new RestClient();
 
-                var request = new RestRequest("http://localhost:5000/api/states/", DataFormat.Json);
+                var request = new RestRequest("http://localhost:5000/api/states", DataFormat.Json);
                 var urlPhoto = UploadPhotoFriend(createStateViewModel.PhotoFile);
+                createStateViewModel.Flag = urlPhoto;
                 request.AddJsonBody(createStateViewModel);
                 var response = client.Post<CreateStateViewModel>(request);
                 return Redirect("/state/index");

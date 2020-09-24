@@ -124,7 +124,7 @@ namespace WebAzure.Controllers
             {
                 var client = new RestClient();
 
-                var request = new RestRequest("http://localhost:5000/api/countries" + id, DataFormat.Json);
+                var request = new RestRequest("http://localhost:5000/api/countries/" + id, DataFormat.Json);
                 var response = client.Delete<Country>(request);
 
                 return Redirect("/country");

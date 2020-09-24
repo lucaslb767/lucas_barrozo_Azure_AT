@@ -14,6 +14,7 @@ namespace WebAzure.Models.FriendModel
         public IFormFile PhotoFile { get; set; }
         public string Photo { get; set; }
         public string Email { get; set; }
+        public string Telephone { get; set; }
         public DateTime Bday { get; set; }
         public Country Country { get; set; }
         public State State { get; set; }

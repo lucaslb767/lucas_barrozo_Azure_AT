@@ -105,11 +105,6 @@ namespace CountryAPI.Controllers
             {
                 try
                 {
-                    foreach (var item in country.States)
-                    {
-                        _context.States.Remove(item);
-                    }
-
                     foreach(var item in friends)
                     {
                         if((item.Country.Id) == country.Id)
@@ -121,6 +116,11 @@ namespace CountryAPI.Controllers
                             _context.Friends.Remove(item);
                         }
                     }
+                    foreach (var item in country.States)
+                    {
+                        _context.States.Remove(item);
+                    }
+
                     _context.Countries.Remove(country);
                     await _context.SaveChangesAsync();
                     transaction.Commit();

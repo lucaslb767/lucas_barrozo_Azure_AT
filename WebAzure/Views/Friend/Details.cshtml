@@ -32,7 +32,7 @@
             @Html.DisplayNameFor(model => model.Photo)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Photo)
+            <img src="@Html.DisplayFor(model => model.Photo)" alt="some text" width=60 height=40>
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Email)
@@ -53,6 +53,41 @@
             @Html.DisplayFor(model => model.Bday)
         </dd>
     </dl>
+</div>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Telephone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.Friends)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Surname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telephone)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
 </div>
 <div>
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
