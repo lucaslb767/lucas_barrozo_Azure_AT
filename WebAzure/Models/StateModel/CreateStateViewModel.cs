@@ -1,0 +1,17 @@
+﻿using Domain;
+using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace WebAzure.Models.StateModel
+{
+    public class CreateStateViewModel
+    {
+        public string Name { get; set; }
+        public string Flag { get; set; }
+        public IFormFile PhotoFile { get; set; }
+        public Country Country { get; set; }
+    }
+}
