@@ -91,7 +91,7 @@ namespace FriendAPI.Controllers
             friendResponse.Country = countryTaker;
             friendResponse.State = stateTaker;
 
-            Friend friend = new Friend { Name = friendResponse.Name, Surname = friendResponse.Surname, Photo = friendResponse.Photo, Email = friendResponse.Email, Bday = friendResponse.Bday, Country = friendResponse.Country, State = friendResponse.State };
+            Friend friend = new Friend { Name = friendResponse.Name, Surname = friendResponse.Surname, Photo = friendResponse.Photo, Email = friendResponse.Email, Telephone = friendResponse.Telephone,Bday = friendResponse.Bday, Country = friendResponse.Country, State = friendResponse.State };
 
             _context.Friends.Add(friend);
             await _context.SaveChangesAsync();

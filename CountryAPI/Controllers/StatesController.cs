@@ -92,7 +92,7 @@ namespace CountryAPI.Controllers
             _context.States.Add(state);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetState", new { id = state.Id }, state);
+            return CreatedAtAction("GetStates", new { id = state.Id }, state);
         }
 
 
