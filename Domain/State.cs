@@ -12,6 +12,7 @@ namespace Domain
         public String Flag { get; set; }
         //[JsonIgnore]
         public virtual Country Country { get; set; }
+
     }
 
     public class StateResponse
